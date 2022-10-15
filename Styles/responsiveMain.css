@@ -1,0 +1,108 @@
+@media screen and (max-width:885px){
+    .section-one .header ul:nth-child(1) li{
+        display: none;
+    }
+    .section-one .bg-image{
+        width: 100%;
+        overflow: hidden;
+    }
+    .section-one .header .browse li{
+        display: block !important;
+        padding-right: 5px;
+    }
+    .section-one .header .browse li:hover{
+        transform: scale(1.0) !important;
+    }
+    .section-one .header .browse i:hover{
+        transform: scale(1.1);
+    }
+    .section-one .header ul .browse{
+        display: flex !important;
+    }
+}
+@media screen and (max-width:700px) {
+    .section-one{
+        height:110vh;
+    }
+    .section-one .bg-image img{
+        width: fit-content;
+    }
+    .footer .footer-cont .footer-content{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width:550px) {
+   
+    .section-one .header ul .search{
+        display: none;
+    }
+    .section-one .header ul .bell{
+        font-size: 15px;
+    }
+    .section-one .header ul .users img{
+        width: 25px;
+    }
+    .section-one .header ul .caret{
+        font-size: 15px;
+    }
+    .sliders h2{
+        font-size: 16px;
+    }
+    .section_sliders .slider {
+      padding-left: 20px;
+    }
+    .section-one .content-center{
+        padding:0px 20px;
+    }
+    .section-one .content-center .content p{
+        width: fit-content;
+    }
+    .section-one .content-center .content h2{
+        font-size: larger;
+        padding-bottom: 10px;
+    }
+    .section-one .content-center .buttons {
+        font-size: small;
+    }
+    .section-one .content-center .buttons .play{
+        padding: 5px 20px;
+        
+    }
+    .section-one .content-center .buttons i {
+        font-size: 15px
+    }
+    .section-one .content-center .buttons .learn-more i {
+        font-size: 8px;
+    }
+    .footer .footer-cont .footer-content{
+        grid-template-columns: 1fr 1fr ;
+        font-size: 10px;
+    }
+    footer .service-code button{
+        font-size: 10px;
+    }
+    .footer .footer-cont .icons i{
+        font-size:15px;
+    }
+    .footer .copywrite{
+        font-size: 8px;
+    }
+}
+@media screen and (max-width:450px) {
+    .section-one ul .logo svg{
+        width: 80px;
+    }
+    .section-one .header{
+        padding: 20px;
+    }
+    .section-one .responsive_list{
+        left:50%;
+        transform: translatex(-50%);
+        font-size: small;
+        width:80%;
+        
+    }
+    .section-one .responsive_list::after{
+        left: 150px;
+    }
+}

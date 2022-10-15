@@ -1,0 +1,192 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.video{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color:rgb(9, 9, 9);
+    
+}
+.video video{
+    object-fit:contain !important;
+    width: 100%;
+    border: none;
+    outline: none;
+    
+}
+.video .back{
+    background-color: rgb(9, 9, 9);
+    position: absolute;
+    top:0%;
+    padding:20px !important;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    left:0%;
+    color: #fff;
+    padding:5px 10px;
+    transition: 1.5s all;
+}
+.video .back_hide{
+    transform: translatey(-100%);
+}
+.video i{
+    cursor: pointer;
+}
+.video .back i{
+    font-size: 20px;
+}
+.video video:hover .video .controls{
+    translate: 0px 75px !important;
+    transition-delay: 5s;
+}
+.video .controls{
+    position: absolute;
+    width:100%;
+    transition: 0.5s ease-in-out;
+    bottom:0%;
+    transition-delay: 0s;
+    padding:10px 20px 0px 20px;
+    background-color: rgb(9, 9, 9);
+
+}
+.video .controls1{
+    translate: 0px 80px;
+    transition-delay: 2s;
+}
+.video .controls .track-and-time{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.video .controls .track{
+    width: 100%;
+    height:7px;
+    /* overflow: hidden; */
+    border-radius: 5px;
+    background-color: #fff !important;
+}
+.video .controls .track .range{
+    background-color: orangered;
+    position: relative;
+    width:0%;
+    height: 100%;
+    border-radius: 5px;
+}
+.video .controls .track .range::after{
+    content: "";
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right:-10px !important;
+    height:13px;
+    width: 13px;
+    border-radius: 50px;
+    background-color:orangered;
+}
+.video .controls .addtional-controls {
+    padding:0px 2px;
+    display:flex;
+    align-items: center;
+    gap: 0px 10px;
+}
+.video .controls .time{
+    color: #fff;
+    padding-left:10px;
+}
+.video .controls .addtional-controls .play{
+    width: 30px;
+}
+.video .next_epi i{
+    color: #000;
+    font-size:70px;
+    /* opacity: 0.3; */
+}
+
+.video .controls .addtional-controls  i{
+    font-size: 25px;
+    font-weight: bolder;
+    color:#fff
+}
+.video .controls .addtional-controls .volume{
+    position: relative;
+    
+}
+.video .controls .addtional-controls .volume .volume_indicator{
+    height:20px;
+    position: absolute;
+    width:100px;
+    transform: rotate(-90deg);
+    overflow: hidden;
+    position:absolute;
+    top:-120%;
+    right:-45%;    
+    background-color:#555;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.video .controls .addtional-controls .volume .volume_indicator1{
+    transition: 10s ease-in-out !important;
+    transition-delay:5s;
+     display: none !important;
+}
+input[type='range'] {
+    overflow: hidden;
+    width: 95% !important;   
+    -webkit-appearance: none;
+    background-color: #fff;
+  }
+  input[type='range']::-webkit-slider-thumb {
+    width: 10px;
+    -webkit-appearance: none;
+    height: 10px;
+    cursor: ew-resize;
+    background:rgba(70, 19, 1, 0.89);
+    box-shadow: -80px 0 0 80px orangered;
+  }
+
+.video .controls .addtional-controls .icons-right{
+    flex-grow:1;
+    display: flex;
+    justify-content: end;
+    gap: 0px 10px;
+}
+.video .controls .addtional-controls .video_speed {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.video .controls .addtional-controls .video_speed .play_back{
+    padding: 10px;
+    position: absolute;
+    bottom:50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border-radius: 5px;
+}
+.video .controls .addtional-controls .video_speed .play_back1{
+    display: none;
+}
+.video .controls .addtional-controls .video_speed .play_back li{
+list-style: none;
+}
+@media screen and (max-width:650px) {
+    .video i{
+        font-size:20px !important; 
+    }
+    .video .controls .track {
+        height:5px;
+    }
+    .video .controls .track .range::after{
+        right: -5px !important;
+        height: 9px;
+        width: 9px;
+    }
+}

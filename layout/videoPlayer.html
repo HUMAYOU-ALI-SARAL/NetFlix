@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="icon" href="../Assets/images/title.ico" type="image" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="../Styles/video.css">
+</head>
+<body>
+ <div class="video" id="video_parent">
+    <video id="video" src="../Assets/videos/1. How To Succeed In This Course.mp4">
+        <param name="autoplay" value="true">
+    </video>
+   
+    <div class="back back_hide" id="top-navigation">
+        <div class="back-arrow" id="back">
+            <i class="fa-solid fa-arrow-left"></i>
+        </div>
+        <div class="flag">
+            <i class="fa-solid fa-flag"></i>
+        </div>
+    </div>
+    <div class="controls controls1" id="controls">
+        <div class="track-and-time">
+            <div class="track" id="range">
+               <div class="range" id="track"></div>
+            </div>
+            <div class="time">
+                <span id="duration"></span>
+            </div>
+        </div>
+        <div class="addtional-controls">
+            <div class="play" id="play">
+                <i class="fa-pause fa-solid" id="play-pause"></i>
+            </div>
+           
+            <div class="revind" id="revind">
+                <i class="fa-solid fa-rotate-left"></i>
+            </div>
+            <div class="forward" id="forward">
+                <i class="fa-solid fa-rotate-right"></i>
+            </div>
+            <div class="volume" >
+                <div class="volume_indicator volume_indicator1" id="volume_indicator" >
+                        <input type="range" class="inner" id="range_volume" min="0" max="100" value="100" style="width:90%;"/>
+                </div>
+                <img src="../Assets/images/mainImages/volume.png"  alt="" width="50px" id="volume">
+            </div>
+           <div class="icons-right">
+            <div class="next_epi" id="next_epi">  
+                <i class="fa-solid fa-forward-step"></i>
+            </div>
+            <div class="subtiles">
+                <i class="fa-regular fa-closed-captioning"></i>
+            </div>
+            <div class="video_speed">
+                <i class="fa-solid fa-gauge" id="speed"></i>
+                    <ul class="play_back1" id="play_back">
+                        <li data-value="0.5">0.25</li>
+                        <li data-value="1.0">Normal</li>
+                        <li data-value="1.25">1.25</li>
+                    </ul>
+            </div>
+            <div class="full_screen" id="full_screen">
+                <i class="fa-solid fa-expand"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+ </div>
+ <script src="../Models/player.js"></script>
+</body>
+</html>
